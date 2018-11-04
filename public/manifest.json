@@ -1,0 +1,37 @@
+{	
+   "short_name": "Sucipto",
+   "name": "ciptoMX - MWS",   
+   "icons": [
+      {
+         "src": "img/icon.png",
+         "type": "image/png",
+         "sizes": "64x64"
+      },
+      {
+         "src": "img/icon.png",
+         "type": "image/png",
+         "sizes": "128x128"
+      },
+     {
+         "src": "img/icon.png",
+         "type": "image/png",
+         "sizes": "152x152"
+      },
+      {
+         "src": "img/icon.png",
+         "type": "image/png",
+         "sizes": "160x160"
+      },
+	  {
+         "src": "img/icon.png",
+         "type": "image/png",
+         "sizes": "192x192"
+      }
+   ],
+   "scope": "/",
+   "start_url": "index.html?launcher=true",
+   "background_color": "#2196F3",
+   "theme_color": "#2196F3",
+   "display": "standalone",
+   "orientation": "portrait"
+}

@@ -1,0 +1,137 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Overpass, Roboto, Helvetica, Arial, sans-serif;
+	font-size: 12pt;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+}
+
+
+/* layout */
+
+.container {
+	display: grid;	
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3,100px);
+	grid-gap: 4px;  	
+}
+
+.col1 {
+	grid-column: 1/3;
+	background: #CCFFE5;
+}
+
+.col2 {
+	grid-column: 3/-1;
+	background: #FFFF80;
+}
+
+.col3 {
+	grid-column: 1/2;
+	grid-row: 2/-1;
+	background: #80FFFF;
+}
+
+.col4 {
+	grid-column: 2/-1;
+	grid-row: 2/2;
+	background: #E6B3FF;
+}
+
+.col5 {
+	grid-column: 2/3;
+	grid-row: 3/3;
+	background: #CCFFE5;
+}
+
+.col6 {
+	grid-column: 3/-1;
+	grid-row: 3/-1;
+	background: #E69900;
+}
+
+.menu {
+    background: white;
+    grid-column: 1/7;
+    color: white;
+    height: fit-content;
+}
+
+.header {
+    /* background: #0099cc; */
+    grid-column: 1/-1;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.gambar-header {
+  display: block;
+  width: 20%;
+  height: auto;
+}
+
+.footer {
+    background: teal;
+    grid-column: 1/-1;
+    padding: 10px;
+    text-align: center;
+    height: fit-content;
+}
+
+a:link, a:visited {
+    text-decoration: none;    
+    font-style: normal;
+    display: inline-block;
+    color : darkblue;
+}
+a:hover {
+    color: orange;
+    font-style: bold;
+    grid-column:all;
+}
+
+
+/* Gambar Overlay */
+.menu:hover .overlay {
+  height: 30vh;
+}
+
+.overlay {
+	display: block;
+  	position: relative;
+  	bottom: 50;
+	left: 0;
+	right: 0;
+	background-color: darkgrey;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+}
+
+.text {
+	white-space: nowrap; 
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.img-logo { width:40px; height: auto; display: block;  }
+.text-putih { color: rgb(255,255,245); }
+.text-header { font-size: 1.5em; padding-bottom: 15px; }
+.text-center { text-align: center;  }
+.text-menu { display: block; font-style: bold; } 

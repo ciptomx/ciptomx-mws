@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2196F3"/>
+    <meta name="Description" content="Penulis: Sucipto, ciptoMX - MWS: Google Mobile Web Specialist - Inixindo 2018">
+    <link href='https://fonts.googleapis.com/css?family=Overpass' rel='stylesheet'>
+    <link rel="stylesheet" href="https://ciptomx-mws.firebaseapp.com/css/grid.css">
+    <link rel="icon" type="image/png" href="https://ciptomx-mws.firebaseapp.com/img/icon.png">
+    <title>Menambahkan 2 Angka</title>
+    <style>
+        input {
+            font-size: medium
+        }
+    </style>
+</head>
+<body>
+<div class='container'>
+	<div class='menu sticky'>
+		<script src="https://ciptomx-mws.firebaseapp.com/js/header2.js"></script>
+		<div class="overlay">
+			<div class="text text-center"><div class="text-header">MENU</div>
+				<div class="text-menu"><a href="../../">BERANDA</a></div>
+				<div class="text-menu"><a href="../2/index.html">PROJECT 2</a></div>
+				<div class="text-menu"><a href="../3/index.html">PROJECT 3</a></div>
+			</div>
+		</div>
+	</div>
+
+	<div class='header'>
+		<a href="index.html">
+	  	<center><img src="https://ciptomx-mws.firebaseapp.com/img/brand.png" class="gambar-header"></center></a>
+	</div>
+
+	<div class='sidebar'>
+	    <script src="https://ciptomx-mws.firebaseapp.com/js/sidebar.js"></script>
+	</div>
+
+	<div class="content">
+		<div class="kalkulator">Tambahkan Dua Angka<p>
+		   <input type="text" size="100%" placeholder="0" />
+		     <center> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + </center>
+		    <input type="text" size="100%"   placeholder="0" />
+		    <center>&nbsp;&nbsp;&nbsp; &nbsp; <button> = </button></center>
+		    <input type="text" size="100%"  readonly />
+		    <script src="../../js/kalkulator.js"></script><p>
+		    Latihan CSS Grid<p>
+			<a href="latihancss.html" target="_self">Lihat</a>
+		</div>
+
+		<div class='sub-content'>
+			Peta Kuliner
+			<p>
+			<a href="../2">1 Marker</a><p>
+			<a href="../3">5 Marker</a>
+		</div>
+		<div class='sub-content'>
+			Profile Saya
+			<p>
+			<a href="../profile.html">Lihat</a>
+		</div>
+	</div>
+</div>
+<div class='footer'>
+	<script src="https://ciptomx-mws.firebaseapp.com/js/footer.js"></script>
+</div>
+
+    <script>
+         window.addEventListener('load', function() {
+            if( ('serviceWorker' in navigator) ){
+               navigator.serviceWorker.register( 'sw.js' , {scope: './'} )
+               .then(function() { return navigator.serviceWorker.ready; })
+               .catch(function(error) { });
+            }
+         });
+    </script>
+    
+</body>
+</html>

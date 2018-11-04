@@ -1,0 +1,189 @@
+body {
+	font-family: Overpass, Roboto, Helvetica, Arial, sans-serif;
+	font-size: 12pt;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+}
+
+.img-logo { width:40px; height: auto; display: block;  }
+.img-profile { max-width: 90%; height: auto; display: block; margin: auto; border-radius:6px; }
+.img-thumb { width:20%;height: auto;  }
+.text-putih { color: rgb(255,255,245); }
+.text-header { font-size: 1.5em; padding-bottom: 15px; }
+.text-center { text-align: center;  }
+.text-menu { display: block; font-style: bold; } 
+.img-preview { border-radius: 6px; width:100%; height: auto; display:block; margin: auto; float: left; }
+
+a:link, a:visited {
+    text-decoration: none;    
+    font-style: normal;
+    display: inline-block;
+    color : darkblue;
+}
+a:hover {
+    color: orange;
+    font-style: bold;
+    grid-column:all;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    max-width: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+}
+
+/* Gambar Overlay */
+.menu:hover .overlay {
+  height: 30vh;
+}
+
+
+.overlay {
+	display: block;
+  	position: relative;
+  	bottom: 50;
+	left: 0;
+	right: 0;
+	background-color: darkgrey;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+}
+
+.text {
+	white-space: nowrap; 
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+/* Akhir Overlays */
+
+.header {
+    /* background: #0099cc; */
+    grid-column: 1/-1;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.gambar {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gambar-header {
+  display: block;
+  width: 20%;
+  height: auto;
+}
+
+.menu {
+    background: white;
+    grid-column: 1/7;
+    color: white;
+    height: fit-content;
+}
+
+.sidebar {
+    background: lightgrey;
+    grid-column: 1/-6;
+    grid-row: 3/10;
+    text-align: center;
+    height:auto;
+    padding: 5px;
+}
+
+.content {
+    background: lightblue;
+    grid-column: 2/7;
+    height: fit-content;
+    padding-top: 10px;
+    grid-gap: 2px;
+}
+
+.sub-content {
+    background: lightblue;
+    grid-column: 2/7;
+    height: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+
+}
+
+.kalkulator {
+	background: lightblue;
+    grid-column: 2/7;
+    width: auto;
+    display:grid;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+
+.footer {
+    background: teal;
+    grid-column: 1/-1;
+    padding: 10px;
+    text-align: center;
+    height: fit-content;
+}
+
+/* AWAL PETA */ 
+
+.map {
+    grid-column: 1/1;
+}
+
+.photo {
+    background: lightskyblue;
+    grid-column: 1/-4;
+    padding: 10px;
+
+
+}
+
+.review {
+    background: lightsteelblue;
+    grid-column: 4/-1;
+    padding: 10px;
+
+}
+
+/* AKHIR PETA */ 
+
+input[type=text] {
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.fa {
+    padding: 8px;
+}
+
+
+@media screen and (max-width: 700px) {
+	.menu,.header,.sidebar,.content,.sub-content,.container,.footer,.map,.photo,.review { grid-column: 1/-1; }
+}
+
+@media screen and (max-width: 500px) {
+	.menu,.header,.sidebar,.content,.sub-content,.container,.footer,.map,.photo,.review { grid-column: 1/-1; }
+}

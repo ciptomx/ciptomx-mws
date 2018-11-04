@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My CSS-Grid</title>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#2196F3"/>
+    <meta name="Description" content="Penulis: Sucipto, ciptoMX - MWS: Google Mobile Web Specialist - Inixindo 2018">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh">
+    <link href='https://fonts.googleapis.com/css?family=Overpass' rel='stylesheet'>
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="icon" type="image/png" href="img/icon.png">
+	<link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+<div class='container'>
+	<div class='menu sticky'>
+		<script src="js/header.js"></script>
+		<div class="overlay">
+			<div class="text text-center"><div class="text-header">MENU</div>
+				<div class="text-menu"><a href="project/1/">PROJECT 1</a></div>
+				<div class="text-menu"><a href="project/2/index.html">PROJECT 2</a></div>
+				<div class="text-menu"><a href="project/3/index.html">PROJECT 3</a></div>
+			</div>
+		</div>
+	</div>
+
+	<div class='header'>
+		<a href="index.html" rel="noopener">
+	  	<center><img src="img/brand.png" class="gambar-header" alt="UM Pontianak"></center></a>
+	</div>
+
+	<div class='sidebar'>
+	    <script src="https://ciptomx-mws.firebaseapp.com/js/sidebar.js"></script>
+	</div>
+
+	<div class='content'>
+		<div class='sub-content'>
+			Menghitung Angka<p>
+			<a href="project/1/index.html" target="_self">Lihat</a><p>
+			Latihan CSS Grid<p>
+			<a href="project/1/latihancss.html" target="_self">Lihat</a>
+		</div>
+		<div class='sub-content'>
+			Peta Kuliner
+			<p>
+			<a href="project/2/index.html">1 Marker</a><p>
+			<a href="project/3/index.html">5 Marker</a>
+		</div>
+		<div class='sub-content'>
+			Profile Saya
+			<p>
+			<a href="profile.html">Lihat</a>
+		</div>
+	</div>
+</div>	
+
+<div class='footer'>
+	<script src="js/footer.js"></script>
+</div>
+
+    <script>
+         window.addEventListener('load', function() {
+            if( ('serviceWorker' in navigator) ){
+               navigator.serviceWorker.register( 'sw.js' , {scope: './'} )
+               .then(function() { return navigator.serviceWorker.ready; })
+               .catch(function(error) { });
+            }
+         });
+    </script>
+
+</body>
+</html>
